@@ -175,16 +175,14 @@ expand_cluster <- function(t, A, B, g) {
       ch_em_T <- setdiff(children(t$emitters, g), t$emitters)
       if (setequal(pa_re_S, pa_re_T) && setequal(ch_em_S, ch_em_T)) {
         st_clust <- list(
-          list(
-            vertices = st,
-            receivers = union(s$receivers, t$receivers),
-            emitters = union(s$emitters, t$emitters)
-          )
+          vertices = st,
+          receivers = union(s$receivers, t$receivers),
+          emitters = union(s$emitters, t$emitters)
         )
         A <- unique(
           c(
             A,
-            st_clust,
+            list(st_clust),
             expand_cluster(st_clust, A, B_prime, g)
           )
         )
