@@ -1,5 +1,5 @@
 # Transit clusters
-Code for the paper "Clustering and Structural Robustness in Causal Inference" by Santtu Tikka, Jouni Helske, and Juha Karvanen.
+Code for the paper "Clustering and Structural Robustness in Causal Diagrams" by Santtu Tikka, Jouni Helske, and Juha Karvanen.
 
 # Usage
 
